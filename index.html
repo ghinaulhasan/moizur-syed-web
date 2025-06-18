@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moizur Syed Premium SeterLight-TV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                  url('https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1470&auto=format&fit=crop') center/cover;
+      min-height: 400px;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    .popular-plan {
+      border: 2px solid #0d6efd;
+      position: relative;
+    }
+    .popular-badge {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: #0d6efd;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    footer {
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
+    }
+    .product-card img {
+      height: 180px;
+      object-fit: cover;
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    .phone-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    .phone-topbar {
+      background: rgba(255,255,255,0.1);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="fas fa-tv me-2"></i>Moizur Syed SeterLight-TV
+    </a>
+    <div class="d-flex align-items-center">
+      <div class="phone-topbar d-none d-md-block">
+        <a href="tel:+14167284514" class="text-white text-decoration-none">
+          <i class="fas fa-phone-alt me-1"></i> *1(416)728-4514
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#packages"><i class="fas fa-box-open me-1"></i> Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products"><i class="fas fa-satellite-dish me-1"></i> Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-phone-alt me-1"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Floating Phone Button -->
+<a href="tel:+14167284514" class="btn btn-primary btn-lg rounded-circle phone-float d-lg-none">
+  <i class="fas fa-phone"></i>
+</a>
+
+<!-- Hero -->
+<section class="hero-bg text-white d-flex align-items-center">
+  <div class="container text-center py-5">
+    <h1 class="display-5 fw-bold mb-3">Premium IPTV Service</h1>
+    <p class="lead mb-4">10,000+ Channels | 4K & HD Quality | 99.9% Uptime</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="#packages" class="btn btn-primary btn-lg px-4">View Plans</a>
+      <a href="tel:+14167284514" class="btn btn-outline-light btn-lg px-4"><i class="fas fa-phone-alt me-2"></i> Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="feature-icon"><i class="fas fa-globe"></i></div>
+        <h4>Global Channels</h4>
+        <p class="text-muted">Access to international content from 50+ countries</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+        <h4>Sports Packages</h4>
+        <p class="text-muted">All premium sports channels included</p>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-icon"><i class="fas fa-film"></i></div>
+        <h4>VOD Library</h4>
+        <p class="text-muted">50,000+ Movies & TV Series on demand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call Now Banner -->
+<section class="bg-primary text-white py-3 text-center">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-center">
+      <i class="fas fa-phone-alt me-3 fa-lg"></i>
+      <h4 class="mb-0">Call Now for Best Deals: <a href="tel:+14167284514" class="text-white">*1(416)728-4514</a></h4>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Choose Your Plan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 card-hover">
+          <div class="card-body text-center p-4">
+            <h5 class="card-title">Basic</h5>
+            <h3 class="my-3">$9.99</h3>
+            <p class="text-muted"><i class="fas fa-tv me-2"></i>1,000+ Channels</p>
+            <p class="text-muted"><i class="fas fa-mobile-alt me-2"></i>1 Device</p>
+            <p class="text-muted"><i class="far fa-calendar-alt me-2"></i>1 Month</p>
+            <a href="tel:+14167284514" class="btn btn-outline-primary mt-3"><i class="fas fa-phone-alt me-1"></i> Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm popular-plan card-hover">
+          <span class="popular-badge">Popular</span>
+          <div class="card-body text-center p-4">
+            <h5 class="card-title">Standard</h5>
+            <h3 class="my-3">$24.99</h3>
+            <p><i class="fas fa-tv me-2"></i>5,000+ Channels</p>
+            <p><i class="fas fa-mobile-alt me-2"></i>2 Devices</p>
+            <p><i class="far fa-calendar-alt me-2"></i>3 Months</p>
+            <a href="tel:+14167284514" class="btn btn-primary mt-3"><i class="fas fa-phone-alt me-1"></i> Best Value</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 card-hover">
+          <div class="card-body text-center p-4">
+            <h5 class="card-title">Premium</h5>
+            <h3 class="my-3">$79.99</h3>
+            <p class="text-muted"><i class="fas fa-tv me-2"></i>All Channels</p>
+            <p class="text-muted"><i class="fas fa-mobile-alt me-2"></i>5 Devices</p>
+            <p class="text-muted"><i class="far fa-calendar-alt me-2"></i>12 Months</p>
+            <a href="tel:+14167284514" class="btn btn-outline-primary mt-3"><i class="fas fa-phone-alt me-1"></i> Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 card-hover">
+          <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1472&auto=format&fit=crop" class="card-img-top" alt="Setellite TV">
+          <div class="card-body text-center">
+            <h5 class="card-title">Setellite TV</h5>
+            <p class="fw-bold">$129.99</p>
+            <a href="tel:+14167284514" class="btn btn-sm btn-outline-primary"><i class="fas fa-phone-alt me-1"></i> Inquire Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 card-hover">
+          <img src="https://images.unsplash.com/photo-1592155931584-901ac15763e3?q=80&w=1473&auto=format&fit=crop" class="card-img-top" alt="IPTV App">
+          <div class="card-body text-center">
+            <h5 class="card-title">IPTV Mobile App</h5>
+            <p class="text-muted">Watch on your smartphone or tablet</p>
+            <p class="fw-bold">Free with Subscription</p>
+            <a href="tel:+14167284514" class="btn btn-sm btn-outline-primary"><i class="fas fa-phone-alt me-1"></i> Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card shadow-sm border-0 card-hover">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1470&auto=format&fit=crop" class="card-img-top" alt="Sports Package">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sports Package</h5>
+            <p class="text-muted">All premium sports channels</p>
+            <p class="fw-bold">$14.99/month</p>
+            <a href="tel:+14167284514" class="btn btn-sm btn-outline-primary"><i class="fas fa-phone-alt me-1"></i> Add to Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Customers Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3" width="80" alt="Customer">
+            <p class="fst-italic">"Best IPTV service I've used! Channel selection is amazing and the quality is top-notch."</p>
+            <div class="text-warning mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h6 class="mb-0">Ahmed R.</h6>
+            <small class="text-muted">Toronto</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3" width="80" alt="Customer">
+            <p class="fst-italic">"Customer support is excellent. They helped me set up everything quickly."</p>
+            <div class="text-warning mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h6 class="mb-0">Fatima K.</h6>
+            <small class="text-muted">U-S</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body text-center p-4">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mb-3" width="80" alt="Customer">
+            <p class="fst-italic">"The sports packages are worth every penny. Never miss a game now!"</p>
+            <div class="text-warning mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h6 class="mb-0">Usman T.</h6>
+            <small class="text-muted">Canada</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="mb-4">Contact Information</h2>
+        <div class="d-flex align-items-start mb-4">
+          <div class="me-3 text-primary">
+            <i class="fas fa-phone-alt fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Call Us</h5>
+            <p class="mb-0"><a href="tel:+14167284514" class="text-decoration-none">*1(416)728-4514</a></p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-4">
+          <div class="me-3 text-primary">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">WhatsApp</h5>
+            <p class="mb-0"><a href="https://wa.me/14167284514" class="text-decoration-none">Chat Now</a></p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start mb-4">
+          <div class="me-3 text-primary">
+            <i class="fas fa-envelope fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Email</h5>
+            <p class="mb-0"><a href="mailto:support@moizursyediptv.com" class="text-decoration-none">support@moizursyediptv.com</a></p>
+          </div>
+        </div>
+        <div class="d-flex align-items-start">
+          <div class="me-3 text-primary">
+            <i class="fas fa-clock fa-2x"></i>
+          </div>
+          <div>
+            <h5 class="mb-1">Working Hours</h5>
+            <p class="mb-0">24/7 Support</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="mb-4">Send Us a Message</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Address" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="mb-3"><i class="fas fa-tv me-2"></i> Moizur Syed IPTV</h5>
+        <p>Premium IPTV services with the best channel selection and quality.</p>
+        <div class="mt-3">
+          <a href="tel:+14167284514" class="text-white text-decoration-none">
+            <i class="fas fa-phone-alt me-2"></i> *1(416)728-4514
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5 class="mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="#packages" class="text-white text-decoration-none">Packages</a></li>
+          <li class="mb-2"><a href="#products" class="text-white text-decoration-none">Products</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mb-3">Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+        </div>
+        <div class="mt-4">
+          <a href="tel:+14167284514" class="btn btn-outline-light">
+            <i class="fas fa-phone-alt me-1"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4 bg-light">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Moizur Syed IPTV. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
